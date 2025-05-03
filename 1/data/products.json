@@ -1,0 +1,28 @@
+{
+  "promo_slides": [
+    {
+      "image": "promo1.jpg",
+      "title": "PROMO HARI INI!",
+      "description": "Diskaun 20% untuk pembelian pertama"
+    }
+  ],
+  "products": [
+    {
+      "id": "coway-airmega-300",
+      "name": "Coway Airmega 300",
+      "category": "Air Purifier",
+      "price": 1599,
+      "promo": "Free Installation",
+      "image": "airmega300.jpg",
+      "whatsapp_link": "https://wa.me/60123456789?text=Saya%20minat%20Airmega%20300"
+    },
+    {
+      "id": "coway-p-07l",
+      "name": "Coway P-07L",
+      "category": "Water Purifier",
+      "price": 899,
+      "promo": "Free 2 Filter Tambahan",
+      "image": "p07l.jpg"
+    }
+  ]
+}

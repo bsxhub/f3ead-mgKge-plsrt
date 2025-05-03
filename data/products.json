@@ -1,0 +1,117 @@
+{
+  "products": [
+    {
+      "id": "wp1",
+      "name": "Neo Plus",
+      "category": "water",
+      "description": "Penapis air premium dengan teknologi RO (Reverse Osmosis) yang menapis 99.9% bakteria dan kotoran.",
+      "image": "images/products/neo-plus.jpg",
+      "monthlyPrice": 120,
+      "cashPrice": 3500,
+      "features": [
+        "Teknologi RO & UF",
+        "6 Peringkat Penapis",
+        "Tangki 6 Liter",
+        "Water Flow Controller"
+      ]
+    },
+    {
+      "id": "wp2",
+      "name": "Villaem II",
+      "category": "water",
+      "description": "Penapis air premium tanpa elektrik yang memberikan air bersih dan segar dengan 4 peringkat penapisan.",
+      "image": "images/products/villaem.jpg",
+      "monthlyPrice": 85,
+      "cashPrice": 2800,
+      "features": [
+        "Tanpa Elektrik",
+        "4 Peringkat Penapis",
+        "Filter Nano Argentum",
+        "Penjimatan Ruang"
+      ]
+    },
+    {
+      "id": "wp3",
+      "name": "Ombak",
+      "category": "water",
+      "description": "Penapis air mesra pengguna dengan sistem penapisan Natural Plus dan reka bentuk kompak untuk dapur kecil.",
+      "image": "images/products/ombak.jpg",
+      "monthlyPrice": 78,
+      "cashPrice": 2400,
+      "features": [
+        "Natural Plus Filter",
+        "3 Peringkat Penapisan",
+        "Saiz Kompak",
+        "Pengendalian Mudah"
+      ]
+    },
+    {
+      "id": "ap1",
+      "name": "Storm",
+      "category": "air",
+      "description": "Penapis udara berteknologi tinggi yang memerangkap partikel halus PM2.5, alergen dan bau tidak menyenangkan.",
+      "image": "images/products/storm.jpg",
+      "monthlyPrice": 115,
+      "cashPrice": 3200,
+      "features": [
+        "Penapisan 6 Peringkat",
+        "Sensor Kualiti Udara",
+        "Mod Auto & Tidur",
+        "Kawalan Jauh"
+      ]
+    },
+    {
+      "id": "ap2",
+      "name": "Lombok",
+      "category": "air",
+      "description": "Penapis udara premium untuk bilik besar dengan teknologi HEPA dan karbon aktif untuk udara bersih segar.",
+      "image": "images/products/lombok.jpg",
+      "monthlyPrice": 95,
+      "cashPrice": 2800,
+      "features": [
+        "Filter HEPA",
+        "Filter Karbon Aktif",
+        "Liputan 40m²",
+        "Penunjuk Kualiti Udara"
+      ]
+    },
+    {
+      "id": "bd1",
+      "name": "Bidetmega",
+      "category": "bidet",
+      "description": "Bidet moden dengan semburan air suam, pengeringan udara dan kawalan suhu dudukan yang boleh dilaras.",
+      "image": "images/products/bidetmega.jpg",
+      "monthlyPrice": 90,
+      "cashPrice": 2500,
+      "features": [
+        "Air Suam",
+        "Pengering Udara",
+        "Pemanasan Dudukan",
+        "Kawalan Digital"
+      ]
+    }
+  ],
+  "promotions": [
+    {
+      "id": "promo1",
+      "title": "Promosi Raya: Penapis Air Percuma 2 Bulan",
+      "description": "Dapatkan penapis air Coway dan nikmati pengecualian bayaran untuk 2 bulan pertama. Termasuk pemasangan percuma dan penyelenggaraan.",
+      "image": "images/promotions/raya-promo.jpg",
+      "period": "Hingga 30 Jun 2023"
+    },
+    {
+      "id": "promo2",
+      "title": "Pakej Duo: Penapis Air & Udara",
+      "description": "Jimat RM30/bulan apabila anda melanggan kedua-dua penapis air dan udara Coway. Bonus: Pemurni udara kereta percuma!",
+      "image": "images/promotions/duo-package.jpg",
+      "period": "Tawaran Terhad"
+    },
+    {
+      "id": "promo3",
+      "title": "Kempen Rujuk Kawan",
+      "description": "Rujuk rakan anda dan dapatkan rebat RM100 untuk langganan sedia ada anda. Rakan anda juga akan menerima diskaun RM50.",
+      "image": "images/promotions/referral.jpg",
+      "period": "Sepanjang Tahun 2023"
+    }
+  ]
+}
