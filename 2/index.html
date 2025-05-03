@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azman Hashim - Ejen Sah Coway Malaysia</title>
+    <meta name="description" content="Ejen Coway sah anda di Klang Valley. Dapatkan penapis air, penapis udara dan produk Coway terbaik dengan servis pasang percuma dan penyelenggaraan berkala.">
+    
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header dengan Navbar -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo-coway.png" alt="Logo Coway">
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#produk">Produk</a></li>
+                    <li><a href="#promosi">Promosi</a></li>
+                    <li><a href="#testimoni">Testimoni</a></li>
+                    <li><a href="#tentang-saya">Tentang Saya</a></li>
+                    <li><a href="#hubungi">Hubungi Saya</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Dapatkan Solusi Air & Udara Bersih Coway Dengan Azman</h1>
+                <p>Ejen Sah Coway Malaysia - ID: CWM12345</p>
+                <p>Berikan keluarga anda air minuman yang bersih & selamat dengan penapis air Coway terbaik</p>
+                <div class="hero-buttons">
+                    <a href="#produk" class="btn-primary">Lihat Produk</a>
+                    <a href="https://wa.me/60123456789" class="btn-secondary"><i class="fab fa-whatsapp"></i> WhatsApp Saya</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-image.png" alt="Produk Coway">
+            </div>
+        </div>
+    </section>
+
+    <!-- Kenapa Pilih Coway -->
+    <section class="why-coway">
+        <div class="container">
+            <h2>Kenapa Memilih Coway?</h2>
+            <div class="features">
+                <div class="feature-item">
+                    <i class="fas fa-medal"></i>
+                    <h3>Kualiti Terbaik</h3>
+                    <p>Jenama #1 di Korea & Malaysia dengan teknologi canggih</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-tools"></i>
+                    <h3>Servis Berkala</h3>
+                    <p>Percuma penyelenggaraan & servis setiap 2 bulan</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Waranti Seumur Hidup</h3>
+                    <p>Jaminan penukaran alat ganti sekiranya berlaku kerosakan</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <h3>Bayaran Bulanan Rendah</h3>
+                    <p>Ansuran bulanan yang berpatutan & terjangkau</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produk Section -->
+    <section id="produk" class="products">
+        <div class="container">
+            <h2>Produk Coway</h2>
+            <div class="product-categories">
+                <button class="category-btn active" data-category="all">Semua</button>
+                <button class="category-btn" data-category="water">Penapis Air</button>
+                <button class="category-btn" data-category="air">Penapis Udara</button>
+                <button class="category-btn" data-category="other">Lain-lain</button>
+            </div>
+            
+            <div class="product-list" id="productContainer">
+                <!-- Produk akan dipaparkan secara dinamik dari products.json -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Promosi Section -->
+    <section id="promosi" class="promotions">
+        <div class="container">
+            <h2>Promosi Terkini</h2>
+            <div class="promotion-list" id="promotionContainer">
+                <!-- Promosi akan dipaparkan secara dinamik dari products.json -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Proses Sewa Beli Section -->
+    <section class="rental-process">
+        <div class="container">
+            <h2>Cara Mudah Dapatkan Coway</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Pilih Produk</h3>
+                        <p>Pilih produk yang sesuai dengan keperluan anda</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Hubungi Saya</h3>
+                        <p>WhatsApp atau hubungi saya untuk pertanyaan & tempahan</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Isi Borang</h3>
+                        <p>Sediakan dokumen asas (Salinan IC & slip gaji - jika perlu)</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Pemasangan</h3>
+                        <p>Tunggu kelulusan & nikmati pemasangan percuma</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Servis Berkala</h3>
+                        <p>Nikmati servis penyelenggaraan berkala setiap 2 bulan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimoni Section -->
+    <section id="testimoni" class="testimonials">
+        <div class="container">
+            <h2>Testimoni Pelanggan</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p>"Saya sangat berpuas hati dengan servis Encik Azman. Penapis air Coway saya dipasang dengan cepat dan kemas. Servis berkala juga tepat pada masa."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial-1.jpg" alt="Puan Maryam">
+                        <div>
+                            <h4>Puan Maryam</h4>
+                            <p>Pelanggan dari Subang Jaya</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p>"Air dari penapis Coway memang sedap dan segar. Sejak menggunakan Coway, anak-anak saya lebih sihat dan kurang masalah kulit. Terima kasih Encik Azman!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial-2.jpg" alt="Encik Raju">
+                        <div>
+                            <h4>Encik Raju</h4>
+                            <p>Pelanggan dari Shah Alam</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p>"Penapis udara Coway sangat membantu mengurangkan masalah asma saya. Kualiti udara di rumah lebih bersih dan saya boleh bernafas dengan lega."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="images/testimonial-3.jpg" alt="Puan Lim">
+                        <div>
+                            <h4>Puan Lim</h4>
+                            <p>Pelanggan dari Klang</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tentang Saya Section -->
+    <section id="tentang-saya" class="about-me">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/agent-profile.jpg" alt="Azman Hashim - Ejen Coway">
+                </div>
+                <div class="about-text">
+                    <h2>Tentang Saya</h2>
+                    <div class="agent-details">
+                        <h3>Azman Hashim</h3>
+                        <p class="agent-id">ID Ejen: CWM12345</p>
+                        <p>Saya telah menjadi Ejen Sah Coway Malaysia sejak 2018, dengan pengalaman lebih 5 tahun dalam industri penapis air dan udara. Saya berdedikasi untuk membantu keluarga Malaysia mendapatkan air bersih dan udara segar di rumah mereka.</p>
+                        <p>Saya merangkumi kawasan perkhidmatan di seluruh Lembah Klang termasuk Kuala Lumpur, Petaling Jaya, Shah Alam, Subang Jaya, dan kawasan sekitarnya.</p>
+                        <div class="agent-contact">
+                            <a href="tel:+60123456789" class="contact-item"><i class="fas fa-phone"></i> 012-345 6789</a>
+                            <a href="mailto:azman@cowayagent.my" class="contact-item"><i class="fas fa-envelope"></i> azman@cowayagent.my</a>
+                            <a href="https://wa.me/60123456789" class="contact-item"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo-coway.png" alt="Logo Coway">
+                    <p>Azman Hashim - Ejen Sah Coway Malaysia</p>
+                    <p>ID Ejen: CWM12345</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="#beranda">Beranda</a></li>
+                        <li><a href="#produk">Produk</a></li>
+                        <li><a href="#promosi">Promosi</a></li>
+                        <li><a href="#testimoni">Testimoni</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Hubungi</h4>
+                    <p><i class="fas fa-phone"></i> 012-345 6789</p>
+                    <p><i class="fas fa-envelope"></i> azman@cowayagent.my</p>
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Azman Hashim - Ejen Sah Coway Malaysia. Hakcipta Terpelihara.</p>
+                <p class="disclaimer">Website ini adalah milik ejen bebas Coway dan bukan laman web rasmi Coway Malaysia.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
