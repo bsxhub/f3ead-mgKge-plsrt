@@ -795,8 +795,8 @@ function loadProducts() {
                 <h3 class="product-name">${product.nama}</h3>
                 <p class="product-model">${product['id-id']}</p>
                 <div class="product-price">
-                    <p class="price-monthly">Dari ${product.hargabulan}/bulan</p>
-                    <p class="price-cash">${product.hargacash}</p>
+                    <p class="price-monthly">Dari ${product.hargacash}</p>
+                    <p class="price-cash">${product.hargabulan}/bulan</p>
                 </div>
                 <div class="product-actions">
                     <button class="btn btn-primary">Beli Sekarang</button>
@@ -852,3 +852,32 @@ window.addEventListener('scroll', () => {
         navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.8)';
     }
 });
+
+//tambah
+const productActions = document.createElement("div");
+productActions.className = "product-actions";
+
+// Butang Beli Sekarang
+const btnBeli = document.createElement("button");
+btnBeli.className = "btn btn-primary";
+btnBeli.innerText = "Beli Sekarang";
+btnBeli.onclick = function () {
+  const mesej = `Saya nak beli ni ${produk.nama}`;
+  window.open(`https://wa.me/60123456789?text=${encodeURIComponent(mesej)}`, "_blank");
+};
+
+// Butang Maklumat Lanjut
+const btnInfo = document.createElement("button");
+btnInfo.className = "btn btn-outline";
+btnInfo.innerText = "Maklumat Lanjut";
+btnInfo.onclick = function () {
+  const mesej = `Saya nak tahu lebih lanjut tentang ${produk.nama}`;
+  window.open(`https://wa.me/60123456789?text=${encodeURIComponent(mesej)}`, "_blank");
+};
+
+// Masukkan butang ke dalam <div>
+productActions.appendChild(btnBeli);
+productActions.appendChild(btnInfo);
+
+// Contoh tambah ke dalam elemen kad produk
+document.querySelector(".product-card").appendChild(productActions);
