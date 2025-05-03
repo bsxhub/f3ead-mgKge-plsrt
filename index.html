@@ -1,205 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ms">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coway Malaysia | VILLAEM 3 GRAY</title>
+    <title>Coway Malaysia - Penulen Air Berkualiti</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Coway</div>
-            <ul class="nav-links">
-                <li><a href="#">Store</a></li>
-                <li><a href="#">Water Purifiers</a></li>
-                <li><a href="#">Air Purifiers</a></li>
-                <li><a href="#">Mattress</a></li>
-                <li><a href="#">Bidets</a></li>
-                <li><a href="#">Support</a></li>
-            </ul>
-            <div class="nav-icons">
-                <button class="search-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                    </svg>
-                </button>
-                <button class="cart-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="9" cy="21" r="1"></circle>
-                        <circle cx="20" cy="21" r="1"></circle>
-                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-                    </svg>
-                </button>
-                <button class="menu-toggle">
-                    <span></span>
-                    <span></span>
-                </button>
+    <header class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="logo">
+                <img src="https://www.coway.com.my/wp-content/uploads/2020/06/coway-malaysia-logo.png" alt="Coway Logo">
+            </a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#">Produk</a></li>
+                    <li><a href="#">Promosi</a></li>
+                    <li><a href="#">Perkhidmatan</a></li>
+                    <li><a href="#">Tentang Kami</a></li>
+                    <li><a href="#">Hubungi</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button class="btn btn-outline">Log Masuk</button>
+                <button class="btn btn-primary">Daftar</button>
             </div>
-        </nav>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
     </header>
 
-    <main>
-        <section class="product-hero">
-            <div class="container">
-                <div class="product-breadcrumb">
-                    <a href="#">Home</a> / <a href="#">Water Purifier</a> / <span>VILLAEM 3 GRAY</span>
-                </div>
-                <div class="product-content">
-                    <div class="product-gallery">
-                        <div class="product-image">
-                            <img src="https://emall.coway.com.my/ProductImages/7878b773-9722-47d1-a107-f8c001ff0b4f/1/240x240/villaem-3-gray.png" alt="VILLAEM 3 GRAY" id="main-product-image">
-                        </div>
-                        <div class="product-thumbnails">
-                            <button class="thumbnail active" data-image="https://emall.coway.com.my/ProductImages/7878b773-9722-47d1-a107-f8c001ff0b4f/1/240x240/villaem-3-gray.png">
-                                <img src="https://emall.coway.com.my/ProductImages/7878b773-9722-47d1-a107-f8c001ff0b4f/1/240x240/villaem-3-gray.png" alt="VILLAEM 3 GRAY - Front">
-                            </button>
-                            <button class="thumbnail">
-                                <img src="https://emall.coway.com.my/ProductImages/7878b773-9722-47d1-a107-f8c001ff0b4f/1/240x240/villaem-3-gray.png" alt="VILLAEM 3 GRAY - Side">
-                            </button>
-                            <button class="thumbnail">
-                                <img src="https://emall.coway.com.my/ProductImages/7878b773-9722-47d1-a107-f8c001ff0b4f/1/240x240/villaem-3-gray.png" alt="VILLAEM 3 GRAY - Back">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="product-info">
-                        <div class="product-category">Water Purifier</div>
-                        <h1 class="product-title">VILLAEM 3 GRAY</h1>
-                        <div class="product-id">Model: <span>(CHP-7320L)</span></div>
-                        <div class="product-description">
-                            <p>Experience premium water purification with the sleek VILLAEM 3 in elegant gray. Advanced filtration system for cleaner, healthier water.</p>
-                        </div>
-                        <div class="product-price-options">
-                            <div class="price-toggle">
-                                <button class="toggle-btn active" data-option="rental">Rental</button>
-                                <button class="toggle-btn" data-option="purchase">Purchase</button>
-                            </div>
-                            <div class="price-display rental active">
-                                <div class="price">RM125.00<span>/month</span></div>
-                                <p class="price-note">With 5-year service contract</p>
-                            </div>
-                            <div class="price-display purchase">
-                                <div class="price">RM4,800.00</div>
-                                <p class="price-note">One-time payment</p>
-                            </div>
-                        </div>
-                        <div class="product-cta">
-                            <button class="btn-primary">Add to Cart</button>
-                            <button class="btn-secondary">Learn More</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Penulen Air Terbaik untuk Keluarga Anda</h1>
+            <p>Teknologi canggih Korea untuk air yang lebih bersih dan sihat.</p>
+            <a href="#products" class="btn btn-primary">Lihat Produk</a>
+        </div>
+    </section>
 
-        <section class="product-features">
-            <div class="container">
-                <h2 class="section-title">Features & Specifications</h2>
-                <div class="features-grid">
-                    <div class="feature">
-                        <div class="feature-icon">💧</div>
-                        <h3>5-Step Filtration</h3>
-                        <p>Advanced system that removes impurities while preserving essential minerals</p>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-icon">🔍</div>
-                        <h3>Smart Monitoring</h3>
-                        <p>Real-time water quality monitoring with digital display</p>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-icon">🌡️</div>
-                        <h3>Temperature Control</h3>
-                        <p>Multiple temperature settings for different beverage preferences</p>
-                    </div>
-                    <div class="feature">
-                        <div class="feature-icon">🔄</div>
-                        <h3>Self-Sterilization</h3>
-                        <p>Automatic cleaning cycle maintains hygiene standards</p>
-                    </div>
-                </div>
+    <section class="info-section">
+        <div class="info-container">
+            <div class="info-card">
+                <i class="fas fa-truck"></i>
+                <h3>Penghantaran Percuma</h3>
+                <p>Untuk semua pesanan di seluruh Malaysia</p>
             </div>
-        </section>
+            <div class="info-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Waranti 3 Tahun</h3>
+                <p>Jaminan kualiti produk Coway</p>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-exchange-alt"></i>
+                <h3>Servis Berkala</h3>
+                <p>Penukaran penapis dan penyelenggaraan</p>
+            </div>
+        </div>
+    </section>
 
-        <section class="product-accessories">
-            <div class="container">
-                <h2 class="section-title">Recommended Accessories</h2>
-                <div class="accessories-grid">
-                    <div class="accessory-card">
-                        <img src="https://via.placeholder.com/150" alt="Replacement Filter">
-                        <h3>Replacement Filter Set</h3>
-                        <p>RM199.00</p>
-                        <button class="btn-small">Add</button>
-                    </div>
-                    <div class="accessory-card">
-                        <img src="https://via.placeholder.com/150" alt="Water Bottle">
-                        <h3>Coway Eco Bottle</h3>
-                        <p>RM59.00</p>
-                        <button class="btn-small">Add</button>
-                    </div>
-                    <div class="accessory-card">
-                        <img src="https://via.placeholder.com/150" alt="Cleaning Kit">
-                        <h3>Maintenance Kit</h3>
-                        <p>RM89.00</p>
-                        <button class="btn-small">Add</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+    <section id="products" class="products-section">
+        <h2 class="section-title">Penulen Air Coway</h2>
+        <p class="section-subtitle">Pilih yang terbaik untuk keluarga anda</p>
+        
+        <div class="products-container" id="products-container">
+            <!-- Produk akan dimuatkan melalui JS -->
+        </div>
+    </section>
 
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-column">
-                    <h4>Shop and Learn</h4>
+    <section class="features-section">
+        <div class="feature">
+            <div class="feature-content">
+                <h2>Teknologi Penapisan 6 Langkah</h2>
+                <p>Menghilangkan 99.9% bakteria dan kekotoran untuk air yang lebih bersih dan selamat.</p>
+                <a href="#" class="btn-link">Ketahui lebih lanjut <i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="feature-image">
+                <img src="https://www.coway.com.my/wp-content/uploads/2020/06/coway-water-purifier-technology.jpg" alt="Coway Technology">
+            </div>
+        </div>
+        
+        <div class="feature reverse">
+            <div class="feature-content">
+                <h2>Penyelenggaraan Mudah</h2>
+                <p>Notifikasi automatik untuk penukaran penapis dan servis berkala.</p>
+                <a href="#" class="btn-link">Ketahui lebih lanjut <i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div class="feature-image">
+                <img src="https://www.coway.com.my/wp-content/uploads/2020/06/coway-service.jpg" alt="Coway Service">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="https://www.coway.com.my/wp-content/uploads/2020/06/coway-malaysia-logo-white.png" alt="Coway Logo">
+                <p>Teknologi Penulen Air No.1 di Korea</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Produk</h4>
                     <ul>
-                        <li><a href="#">Water Purifiers</a></li>
-                        <li><a href="#">Air Purifiers</a></li>
-                        <li><a href="#">Bidets</a></li>
-                        <li><a href="#">Mattresses</a></li>
-                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Penulen Air</a></li>
+                        <li><a href="#">Penjernih Udara</a></li>
+                        <li><a href="#">Pemanas Air</a></li>
+                        <li><a href="#">Semua Produk</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h4>Services</h4>
+                <div class="link-group">
+                    <h4>Perkhidmatan</h4>
                     <ul>
-                        <li><a href="#">Coway Care</a></li>
-                        <li><a href="#">Installation</a></li>
-                        <li><a href="#">Maintenance</a></li>
-                        <li><a href="#">Warranty</a></li>
+                        <li><a href="#">Servis Berkala</a></li>
+                        <li><a href="#">Tempahan Servis</a></li>
+                        <li><a href="#">Status Servis</a></li>
+                        <li><a href="#">FAQ</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h4>About Coway</h4>
+                <div class="link-group">
+                    <h4>Tentang Kami</h4>
                     <ul>
-                        <li><a href="#">Company Info</a></li>
-                        <li><a href="#">Newsroom</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Ethics & Compliance</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Contact Us</h4>
-                    <ul>
-                        <li><a href="#">Customer Service</a></li>
-                        <li><a href="#">Find a Store</a></li>
-                        <li><a href="#">1-800-COWAY</a></li>
+                        <li><a href="#">Profil Syarikat</a></li>
+                        <li><a href="#">Coway di Korea</a></li>
+                        <li><a href="#">Kerjaya</a></li>
+                        <li><a href="#">Hubungi Kami</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>Copyright © 2023 Coway Malaysia. All rights reserved.</p>
-                <div class="footer-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Use</a>
-                    <a href="#">Sales Policy</a>
-                    <a href="#">Legal</a>
-                    <a href="#">Site Map</a>
-                </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Coway Malaysia. Hak Cipta Terpelihara.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
         </div>
     </footer>
