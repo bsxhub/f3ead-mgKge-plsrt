@@ -1,11 +1,86 @@
 {
   "products": [
     {
-      "id": "wp1",
+      "id": "villaem3",
+      "name": "Villaem 3",
+      "category": "water",
+      "description": "Penapis air premium untuk kegunaan meja dengan teknologi penapisan yang efektif.",
+      "image": "images/products/villaem-3.jpg",
+      "monthlyPrice": 95,
+      "cashPrice": 2900,
+      "features": [
+        "Penapisan Berkualiti Tinggi",
+        "Reka Bentuk Kompak",
+        "Sesuai untuk Meja",
+        "Penyelenggaraan Mudah"
+      ]
+    },
+    {
+      "id": "neon",
+      "name": "Neon",
+      "category": "water",
+      "description": "Penapis air meja dengan pencahayaan LED dan sistem penapisan yang efisien.",
+      "image": "images/products/neon.jpg",
+      "monthlyPrice": 90,
+      "cashPrice": 2700,
+      "features": [
+        "Pencahayaan LED",
+        "Sistem Penapisan Berganda",
+        "Reka Bentuk Moden",
+        "Jimat Ruang"
+      ]
+    },
+    {
+      "id": "dazzle",
+      "name": "Dazzle",
+      "category": "water",
+      "description": "Penapis air meja yang menarik dengan lampu LED berwarna dan fungsi penapisan yang canggih.",
+      "image": "images/products/dazzle.jpg",
+      "monthlyPrice": 88,
+      "cashPrice": 2600,
+      "features": [
+        "Lampu LED Berwarna",
+        "Sistem Penapisan Canggih",
+        "Reka Bentuk Bergaya",
+        "Mudah Diselenggara"
+      ]
+    },
+    {
+      "id": "ais",
+      "name": "Ais",
+      "category": "water",
+      "description": "Penapis air meja dengan kemampuan menghasilkan air sejuk untuk kegunaan rumah.",
+      "image": "images/products/ais.jpg",
+      "monthlyPrice": 92,
+      "cashPrice": 2800,
+      "features": [
+        "Teknologi Pendinginan",
+        "Penapisan Multi-Tahap",
+        "Paip Tahan Karat",
+        "Kapasiti Tangki Besar"
+      ]
+    },
+    {
+      "id": "cinnamon",
+      "name": "Cinnamon",
+      "category": "water",
+      "description": "Penapis air premium dengan reka bentuk elegan dan sistem penapisan berkualiti tinggi.",
+      "image": "images/products/cinnamon.jpg",
+      "monthlyPrice": 98,
+      "cashPrice": 3000,
+      "features": [
+        "Reka Bentuk Elegan",
+        "Penapisan 5 Peringkat",
+        "Kawalan Aliran Air",
+        "Penunjuk Status Filter"
+      ]
+    },
+    {
+      "id": "neoplus",
       "name": "Neo Plus",
       "category": "water",
       "description": "Penapis air premium dengan teknologi RO (Reverse Osmosis) yang menapis 99.9% bakteria dan kotoran.",
-      "image": "https://cowayjkt.id/wp-content/uploads/2021/12/coway-neo-plus-front-view.jpg",
+      "image": "images/products/neo-plus.jpg",
       "monthlyPrice": 120,
       "cashPrice": 3500,
       "features": [
@@ -16,22 +91,37 @@
       ]
     },
     {
-      "id": "wp2",
-      "name": "Villaem II",
+      "id": "glaze",
+      "name": "Glaze",
       "category": "water",
-      "description": "Penapis air premium tanpa elektrik yang memberikan air bersih dan segar dengan 4 peringkat penapisan.",
-      "image": "images/products/villaem.jpg",
-      "monthlyPrice": 85,
-      "cashPrice": 2800,
+      "description": "Penapis air meja dengan kemasan mengkilat dan sistem penapisan canggih untuk rumah moden.",
+      "image": "images/products/glaze.jpg",
+      "monthlyPrice": 93,
+      "cashPrice": 2750,
       "features": [
-        "Tanpa Elektrik",
-        "4 Peringkat Penapis",
-        "Filter Nano Argentum",
-        "Penjimatan Ruang"
+        "Kemasan Mengkilat",
+        "Penapisan Canggih",
+        "Pemasangan Mudah",
+        "Kemampuan Aliran Tinggi"
       ]
     },
     {
-      "id": "wp3",
+      "id": "villaem2",
+      "name": "Villaem 2",
+      "category": "water",
+      "description": "Penapis air tanpa elektrik dengan reka bentuk kompak yang sesuai untuk semua dapur.",
+      "image": "images/products/villaem-2.jpg",
+      "monthlyPrice": 85,
+      "cashPrice": 2500,
+      "features": [
+        "Tanpa Elektrik",
+        "Penapisan 4 Peringkat",
+        "Jimat Ruang",
+        "Mudah Dipasang"
+      ]
+    },
+    {
+      "id": "ombak",
       "name": "Ombak",
       "category": "water",
       "description": "Penapis air mesra pengguna dengan sistem penapisan Natural Plus dan reka bentuk kompak untuk dapur kecil.",
@@ -46,48 +136,348 @@
       ]
     },
     {
-      "id": "ap1",
-      "name": "Storm",
-      "category": "air",
-      "description": "Penapis udara berteknologi tinggi yang memerangkap partikel halus PM2.5, alergen dan bau tidak menyenangkan.",
-      "image": "images/products/storm.jpg",
-      "monthlyPrice": 115,
+      "id": "inception",
+      "name": "Inception",
+      "category": "water",
+      "description": "Penapis air revolusioner dengan teknologi penapisan terkini dan reka bentuk futuristik.",
+      "image": "images/products/inception.jpg",
+      "monthlyPrice": 105,
       "cashPrice": 3200,
       "features": [
-        "Penapisan 6 Peringkat",
-        "Sensor Kualiti Udara",
-        "Mod Auto & Tidur",
-        "Kawalan Jauh"
+        "Teknologi Penapisan Terkini",
+        "Reka Bentuk Futuristik",
+        "Penunjuk Digital",
+        "Smart Filtration System"
       ]
     },
     {
-      "id": "ap2",
-      "name": "Lombok",
-      "category": "air",
-      "description": "Penapis udara premium untuk bilik besar dengan teknologi HEPA dan karbon aktif untuk udara bersih segar.",
-      "image": "images/products/lombok.jpg",
-      "monthlyPrice": 95,
-      "cashPrice": 2800,
+      "id": "coreplus",
+      "name": "Core Plus",
+      "category": "water",
+      "description": "Penapis air jenis berdiri dengan kapasiti tinggi untuk kegunaan keluarga besar.",
+      "image": "images/products/core-plus.jpg",
+      "monthlyPrice": 110,
+      "cashPrice": 3300,
       "features": [
-        "Filter HEPA",
-        "Filter Karbon Aktif",
-        "Liputan 40m²",
+        "Kapasiti Tinggi",
+        "Penapisan Pelbagai Tahap",
+        "Reka Bentuk Floor Standing",
+        "Sesuai untuk Keluarga Besar"
+      ]
+    },
+    {
+      "id": "lucyplus",
+      "name": "Lucy Plus",
+      "category": "water",
+      "description": "Penapis air berdiri dengan kawalan digital dan teknologi penapisan canggih.",
+      "image": "images/products/lucy-plus.jpg",
+      "monthlyPrice": 115,
+      "cashPrice": 3400,
+      "features": [
+        "Kawalan Digital",
+        "Teknologi Penapisan Canggih",
+        "Penunjuk Kualiti Air",
+        "Kapasiti Besar"
+      ]
+    },
+    {
+      "id": "harry",
+      "name": "Harry",
+      "category": "water",
+      "description": "Penapis air berdiri dengan reka bentuk premium dan fungsi penapisan yang efisien.",
+      "image": "images/products/harry.jpg",
+      "monthlyPrice": 108,
+      "cashPrice": 3100,
+      "features": [
+        "Reka Bentuk Premium",
+        "Sistem Penapisan Efisien",
+        "Aliran Air Tinggi",
+        "Penyelenggaraan Berkala"
+      ]
+    },
+    {
+      "id": "storm2",
+      "name": "Storm 2",
+      "category": "air",
+      "description": "Penapis udara generasi terbaru dengan teknologi penjejakan partikel dan sistem penapisan berlapis.",
+      "image": "images/products/storm-2.jpg",
+      "monthlyPrice": 120,
+      "cashPrice": 3400,
+      "features": [
+        "Teknologi Penjejakan Partikel",
+        "Penapisan Berlapis",
+        "Kawalan Aplikasi Pintar",
         "Penunjuk Kualiti Udara"
       ]
     },
     {
-      "id": "bd1",
-      "name": "Bidetmega",
-      "category": "bidet",
-      "description": "Bidet moden dengan semburan air suam, pengeringan udara dan kawalan suhu dudukan yang boleh dilaras.",
-      "image": "images/products/bidetmega.jpg",
-      "monthlyPrice": 90,
+      "id": "noble",
+      "name": "Noble",
+      "category": "air",
+      "description": "Penapis udara premium dengan teknologi antibakteria dan reka bentuk mewah untuk ruang tamu.",
+      "image": "images/products/noble.jpg",
+      "monthlyPrice": 110,
+      "cashPrice": 3200,
+      "features": [
+        "Teknologi Antibakteria",
+        "Reka Bentuk Mewah",
+        "Kawalan Jauh",
+        "Operasi Senyap"
+      ]
+    },
+    {
+      "id": "lombok3",
+      "name": "Lombok 3",
+      "category": "air",
+      "description": "Penapis udara generasi terbaru dengan liputan luas dan teknologi HEPA terkini.",
+      "image": "images/products/lombok-3.jpg",
+      "monthlyPrice": 98,
+      "cashPrice": 2900,
+      "features": [
+        "Filter HEPA Generasi Baru",
+        "Liputan Luas hingga 45m²",
+        "Mod Auto Pintar",
+        "Operasi Senyap"
+      ]
+    },
+    {
+      "id": "tuba",
+      "name": "Tuba",
+      "category": "air",
+      "description": "Penapis udara kompak dengan sistem penapisan berkuasa untuk ruang kecil hingga sederhana.",
+      "image": "images/products/tuba.jpg",
+      "monthlyPrice": 85,
       "cashPrice": 2500,
       "features": [
+        "Saiz Kompak",
+        "Filter HEPA",
+        "Penapis Karbon Aktif",
+        "Penunjuk Kualiti Udara"
+      ]
+    },
+    {
+      "id": "primelite",
+      "name": "Prime Lite",
+      "category": "berex",
+      "description": "Tilam premium dengan teknologi sokongan yang optimum untuk tidur berkualiti.",
+      "image": "images/products/prime-lite.jpg",
+      "monthlyPrice": 130,
+      "cashPrice": 3800,
+      "features": [
+        "Teknologi Sokongan Optimum",
+        "Bahan Anti-Alergen",
+        "Regulasi Suhu",
+        "Ketebalan 25cm"
+      ]
+    },
+    {
+      "id": "ecolite",
+      "name": "Eco Lite",
+      "category": "berex",
+      "description": "Tilam mesra alam dengan bahan semula jadi dan sokongan ergonomik.",
+      "image": "images/products/eco-lite.jpg",
+      "monthlyPrice": 120,
+      "cashPrice": 3500,
+      "features": [
+        "Bahan Semula Jadi",
+        "Sokongan Ergonomik",
+        "Lapisan Anti-Bakteria",
+        "Mesra Alam"
+      ]
+    },
+    {
+      "id": "prime2",
+      "name": "Prime 2",
+      "category": "berex",
+      "description": "Tilam premium generasi kedua dengan teknologi memory foam dan sokongan terbaik.",
+      "image": "images/products/prime-2.jpg",
+      "monthlyPrice": 140,
+      "cashPrice": 4200,
+      "features": [
+        "Memory Foam",
+        "7-Zone Support",
+        "Teknologi Pengudaraan",
+        "Anti-Debu dan Kutu"
+      ]
+    },
+    {
+      "id": "prime",
+      "name": "Prime",
+      "category": "berex",
+      "description": "Tilam premium klasik dengan sokongan yang hebat untuk tidur berkualiti tinggi.",
+      "image": "images/products/prime.jpg",
+      "monthlyPrice": 135,
+      "cashPrice": 4000,
+      "features": [
+        "Sokongan Premium",
+        "Lapisan Lembut",
+        "Tahan Lama",
+        "Anti-Bakteria"
+      ]
+    },
+    {
+      "id": "massagebed",
+      "name": "Massage Bed",
+      "category": "berex",
+      "description": "Katil urut dengan pelbagai mod urutan untuk meredakan kesakitan dan ketegangan otot.",
+      "image": "images/products/massage-bed.jpg",
+      "monthlyPrice": 150,
+      "cashPrice": 4500,
+      "features": [
+        "Pelbagai Mod Urutan",
+        "Kawalan Intensiti",
+        "Reka Bentuk Ergonomik",
+        "Pemasa Auto"
+      ]
+    },
+    {
+      "id": "pebble",
+      "name": "Pebble",
+      "category": "berex",
+      "description": "Kerusi urut kompak dengan reka bentuk unik seperti batu dan fungsi urutan yang hebat.",
+      "image": "images/products/pebble.jpg",
+      "monthlyPrice": 125,
+      "cashPrice": 3700,
+      "features": [
+        "Reka Bentuk Unik",
+        "Urutan Shiatsu",
+        "Kawalan Mudah",
+        "Ringan dan Mudah Alih"
+      ]
+    },
+    {
+      "id": "mine",
+      "name": "Mine",
+      "category": "berex",
+      "description": "Alat urut peribadi yang boleh dibawa ke mana-mana dengan fungsi urutan pelbagai.",
+      "image": "images/products/mine.jpg",
+      "monthlyPrice": 80,
+      "cashPrice": 2200,
+      "features": [
+        "Mudah Alih",
+        "Berbilang Intensiti",
+        "Bateri Tahan Lama",
+        "Reka Bentuk Ergonomik"
+      ]
+    },
+    {
+      "id": "massagechair",
+      "name": "Massage Chair",
+      "category": "berex",
+      "description": "Kerusi urut mewah dengan teknologi urutan 3D dan berbilang program untuk seluruh badan.",
+      "image": "images/products/massage-chair.jpg",
+      "monthlyPrice": 180,
+      "cashPrice": 5500,
+      "features": [
+        "Teknologi Urutan 3D",
+        "Berbilang Program",
+        "Pemanas Badan",
+        "Zero Gravity Reclining"
+      ]
+    },
+    {
+      "id": "bateribidet",
+      "name": "Bateri Bidet",
+      "category": "bathroom",
+      "description": "Bidet berkuasa bateri dengan semburan air yang boleh dilaras dan pemasangan mudah.",
+      "image": "images/products/bateri-bidet.jpg",
+      "monthlyPrice": 75,
+      "cashPrice": 2200,
+      "features": [
+        "Berkuasa Bateri",
+        "Semburan Boleh Laras",
+        "Pemasangan Mudah",
+        "Reka Bentuk Ergonomik"
+      ]
+    },
+    {
+      "id": "fontana",
+      "name": "Fontana",
+      "category": "bathroom",
+      "description": "Bidet premium dengan semburan air suam, kawalan digital dan pemanasan dudukan.",
+      "image": "images/products/fontana.jpg",
+      "monthlyPrice": 95,
+      "cashPrice": 2800,
+      "features": [
         "Air Suam",
-        "Pengering Udara",
+        "Kawalan Digital",
         "Pemanasan Dudukan",
-        "Kawalan Digital"
+        "Sistem Auto-Pembersihan"
+      ]
+    },
+    {
+      "id": "manualbidet",
+      "name": "Manual Bidet",
+      "category": "bathroom",
+      "description": "Bidet manual yang ekonomi dengan fungsi pembersihan berkesan dan pemasangan mudah.",
+      "image": "images/products/manual-bidet.jpg",
+      "monthlyPrice": 65,
+      "cashPrice": 1800,
+      "features": [
+        "Operasi Manual",
+        "Kos Efektif",
+        "Pemasangan Mudah",
+        "Reka Bentuk Tahan Lama"
+      ]
+    },
+    {
+      "id": "pseries",
+      "name": "P-Series",
+      "category": "aircon",
+      "description": "Penyaman udara premium dengan teknologi penjimatan tenaga dan penapis anti-bakteria.",
+      "image": "images/products/p-series.jpg",
+      "monthlyPrice": 150,
+      "cashPrice": 4000,
+      "features": [
+        "Teknologi Inverter",
+        "Penapis Anti-bakteria",
+        "Kawalan Wi-Fi",
+        "Operasi Senyap"
+      ]
+    },
+    {
+      "id": "fseries",
+      "name": "F-Series",
+      "category": "aircon",
+      "description": "Penyaman udara dengan reka bentuk slim dan teknologi penjimatan tenaga untuk rumah moden.",
+      "image": "images/products/f-series.jpg",
+      "monthlyPrice": 135,
+      "cashPrice": 3700,
+      "features": [
+        "Reka Bentuk Slim",
+        "Penjimatan Tenaga",
+        "Fast Cooling",
+        "Smart Diagnosis"
+      ]
+    },
+    {
+      "id": "outdoorfilter",
+      "name": "Outdoor Filter",
+      "category": "outdoor",
+      "description": "Penapis air luaran untuk memastikan bekalan air bersih ke seluruh rumah.",
+      "image": "images/products/outdoor-filter.jpg",
+      "monthlyPrice": 130,
+      "cashPrice": 3600,
+      "features": [
+        "Penapisan Seluruh Rumah",
+        "Tahan Cuaca",
+        "Kapasiti Tinggi",
+        "Penyelenggaraan Mudah"
+      ]
+    },
+    {
+      "id": "washerdryer",
+      "name": "Washer Dryer",
+      "category": "laundry",
+      "description": "Mesin basuh dan pengering dalam satu unit dengan teknologi pembasuhan dan pengeringan efisien.",
+      "image": "images/products/washer-dryer.jpg",
+      "monthlyPrice": 140,
+      "cashPrice": 3800,
+      "features": [
+        "Fungsi Basuh & Kering",
+        "Kapasiti 9kg",
+        "Teknologi Eco Bubble",
+        "Smart Control"
       ]
     }
   ],
