@@ -149,7 +149,7 @@ img {
 .hero {
     height: 100vh;
     min-height: 700px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.coway.com.my/wp-content/uploads/2020/06/coway-water-purifier-banner.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('image/bg.png');
     background-size: cover;
     background-position: center;
     display: flex;
