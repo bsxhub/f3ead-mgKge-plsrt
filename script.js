@@ -801,8 +801,8 @@ function displayProducts(products) {
               <h3 class="product-name">${product.nama}</h3>
               <p class="product-model">${product['id-id']}</p>
               <div class="product-price">
-                  <p class="price-cash">${product.hargacash}</p>
-                  <p class="price-monthly">Dari ${product.hargabulan}/bulan</p>
+                  <p class="price-monthly">${product.hargacash}</p>
+                  <p class="price-cash">Dari ${product.hargabulan}/bulan</p>
               </div>
               <div class="product-actions">
                   <button class="btn btn-primary" onclick="window.open('https://wa.me/60165835244?text=${encodeURIComponent('Saya nak beli ' + product.nama)}')">Beli Sekarang</button>
