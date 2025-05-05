@@ -778,83 +778,43 @@ const productsData = [
 }
    ];
 
-// Fungsi untuk memuat produk
-function loadProducts() {
-    const productsContainer = document.getElementById('products-container');
-    
-    productsData.forEach(product => {
-        const productCard = document.createElement('div');
-        productCard.className = 'product-card';
-        
-        productCard.innerHTML = `
-            <div class="product-image">
-                <img src="${product['gambar-src']}" alt="${product.nama}">
-            </div>
-            <div class="product-info">
-                <p class="product-category">${product.category}</p>
-                <h3 class="product-name">${product.nama}</h3>
-                <p class="product-model">${product['id-id']}</p>
-                <div class="product-price">
-                    <p class="price-monthly">Dari ${product.hargacash}</p>
-                    <p class="price-cash">${product.hargabulan}/bulan</p>
-                </div>
-                <div class="product-actions">
-                     <button class="btn btn-primary" onclick="window.open('https://wa.me/60165835244?text=${encodeURIComponent('Saya nak beli ' + product.nama)}')">Beli Sekarang</button>
-    <button class="btn btn-outline" onclick="window.open('https://wa.me/60165835244?text=${encodeURIComponent('Saya nak tahu lebih lanjut tentang ' + product.nama)}')">Maklumat Lanjut</button>
-                </div>
-            </div>
-        `;
-        
-        productsContainer.appendChild(productCard);
-    });
+// Fungsi untuk memuat dan menampilkan produk
+function displayProducts(products) {
+  const productsContainer = document.getElementById('products-container');
+  productsContainer.innerHTML = '';
+  
+  if (products.length === 0) {
+      productsContainer.innerHTML = '<p class="no-results">Tiada produk ditemukan.</p>';
+      return;
+  }
+  
+  products.forEach(product => {
+      const productCard = document.createElement('div');
+      productCard.className = 'product-card';
+      
+      productCard.innerHTML = `
+          <div class="product-image">
+              <img src="${product['gambar-src']}" alt="${product.nama}" loading="lazy">
+          </div>
+          <div class="product-info">
+              <p class="product-category">${product.category}</p>
+              <h3 class="product-name">${product.nama}</h3>
+              <p class="product-model">${product['id-id']}</p>
+              <div class="product-price">
+                  <p class="price-monthly">Dari ${product.hargabulan}/bulan</p>
+                  <p class="price-cash">${product.hargacash}</p>
+              </div>
+              <div class="product-actions">
+                  <button class="btn btn-primary" onclick="window.open('https://wa.me/60165835244?text=${encodeURIComponent('Saya nak beli ' + product.nama)}')">Beli Sekarang</button>
+                  <button class="btn btn-outline" onclick="window.open('https://wa.me/60165835244?text=${encodeURIComponent('Saya nak tahu lebih lanjut tentang ' + product.nama)}')">Maklumat Lanjut</button>
+              </div>
+          </div>
+      `;
+      
+      productsContainer.appendChild(productCard);
+  });
 }
 
-// Fungsi untuk toggle mobile menu
-function setupMobileMenu() {
-    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-    const navMenu = document.querySelector('.nav-menu');
-    
-    mobileMenuBtn.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-    });
-}
-
-// Event listener ketika DOM sudah dimuat
-document.addEventListener('DOMContentLoaded', () => {
-    loadProducts();
-    setupMobileMenu();
-    
-    // Smooth scrolling untuk anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            const targetId = this.getAttribute('href');
-            if (targetId === '#') return;
-            
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
-                window.scrollTo({
-                    top: targetElement.offsetTop - 80,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
-});
-
-// Animasi scroll
-window.addEventListener('scroll', () => {
-    const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 50) {
-        navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
-    } else {
-        navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.8)';
-    }
-});
-
-
-//tambah
 // Fungsi untuk memfilter produk
 function filterProducts() {
   const categoryFilter = document.getElementById('category-filter').value;
@@ -877,64 +837,72 @@ function filterProducts() {
       return categoryMatch && priceMatch;
   });
   
-  // Tampilkan produk yang difilter
-  displayFilteredProducts(filteredProducts);
+  displayProducts(filteredProducts);
 }
 
-// Fungsi untuk menampilkan produk yang sudah difilter
-function displayFilteredProducts(products) {
-  const productsContainer = document.getElementById('products-container');
-  productsContainer.innerHTML = ''; // Kosongkan dulu
+// Fungsi untuk toggle mobile menu
+function setupMobileMenu() {
+  const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+  const navMenu = document.querySelector('.nav-menu');
   
-  if (products.length === 0) {
-      productsContainer.innerHTML = '<p class="no-results">Tiada produk ditemukan.</p>';
-      return;
+  if (mobileMenuBtn && navMenu) {
+      mobileMenuBtn.addEventListener('click', () => {
+          navMenu.classList.toggle('active');
+      });
+  }
+}
+
+// Event listener ketika DOM sudah dimuat
+document.addEventListener('DOMContentLoaded', () => {
+  // Inisialisasi filter
+  const categoryFilter = document.getElementById('category-filter');
+  const priceFilter = document.getElementById('price-filter');
+  const resetBtn = document.getElementById('reset-filters');
+  
+  if (categoryFilter && priceFilter && resetBtn) {
+      categoryFilter.addEventListener('change', filterProducts);
+      priceFilter.addEventListener('change', filterProducts);
+      resetBtn.addEventListener('click', () => {
+          categoryFilter.value = 'all';
+          priceFilter.value = 'all';
+          filterProducts();
+      });
   }
   
-  products.forEach(product => {
-      const productCard = document.createElement('div');
-      productCard.className = 'product-card';
-      productCard.innerHTML = `
-          <div class="product-image">
-              <img src="${product['gambar-src']}" alt="${product.nama}">
-          </div>
-          <div class="product-info">
-              <p class="product-category">${product.category}</p>
-              <h3 class="product-name">${product.nama}</h3>
-              <p class="product-model">${product['id-id']}</p>
-              <div class="product-price">
-                  <p class="price-monthly">Dari ${product.hargabulan}/bulan</p>
-                  <p class="price-cash">${product.hargacash}</p>
-              </div>
-              <div class="product-actions">
-                  <button class="btn btn-primary">Beli Sekarang</button>
-                  <button class="btn btn-outline">Maklumat Lanjut</button>
-              </div>
-          </div>
-      `;
-      productsContainer.appendChild(productCard);
-  });
-}
-
-// Fungsi reset filter
-function resetFilters() {
-  document.getElementById('category-filter').value = 'all';
-  document.getElementById('price-filter').value = 'all';
-  filterProducts();
-}
-
-// Event listeners untuk filter
-document.addEventListener('DOMContentLoaded', () => {
-  loadProducts();
+  // Muat produk awal
+  if (typeof productsData !== 'undefined') {
+      displayProducts(productsData);
+  } else {
+      console.error('productsData is not defined');
+      document.getElementById('products-container').innerHTML = '<p class="error">Data produk tidak tersedia</p>';
+  }
+  
   setupMobileMenu();
   
-  // Tambahkan event listeners untuk filter
-  document.getElementById('category-filter').addEventListener('change', filterProducts);
-  document.getElementById('price-filter').addEventListener('change', filterProducts);
-  document.getElementById('reset-filters').addEventListener('click', resetFilters);
-  
-  // Fungsi loadProducts bisa diubah menjadi:
-  function loadProducts() {
-      displayFilteredProducts(productsData);
+  // Smooth scrolling untuk anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+          
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+              window.scrollTo({
+                  top: targetElement.offsetTop - 80,
+                  behavior: 'smooth'
+              });
+          }
+      });
+  });
+});
+
+// Animasi scroll navbar
+window.addEventListener('scroll', () => {
+  const navbar = document.querySelector('.navbar');
+  if (navbar) {
+      navbar.style.backgroundColor = window.scrollY > 50 
+          ? 'rgba(255, 255, 255, 0.95)' 
+          : 'rgba(255, 255, 255, 0.8)';
   }
 });
