@@ -854,3 +854,87 @@ window.addEventListener('scroll', () => {
 });
 
 
+//tambah
+// Fungsi untuk memfilter produk
+function filterProducts() {
+  const categoryFilter = document.getElementById('category-filter').value;
+  const priceFilter = document.getElementById('price-filter').value;
+  
+  const filteredProducts = productsData.filter(product => {
+      // Filter kategori
+      const categoryMatch = categoryFilter === 'all' || product.category === categoryFilter;
+      
+      // Filter harga
+      let priceMatch = true;
+      if (priceFilter !== 'all') {
+          const monthlyPrice = parseFloat(product.hargabulan.replace('RM', '').replace(',', ''));
+          
+          if (priceFilter === 'low') priceMatch = monthlyPrice < 100;
+          else if (priceFilter === 'medium') priceMatch = monthlyPrice >= 100 && monthlyPrice <= 150;
+          else if (priceFilter === 'high') priceMatch = monthlyPrice > 150;
+      }
+      
+      return categoryMatch && priceMatch;
+  });
+  
+  // Tampilkan produk yang difilter
+  displayFilteredProducts(filteredProducts);
+}
+
+// Fungsi untuk menampilkan produk yang sudah difilter
+function displayFilteredProducts(products) {
+  const productsContainer = document.getElementById('products-container');
+  productsContainer.innerHTML = ''; // Kosongkan dulu
+  
+  if (products.length === 0) {
+      productsContainer.innerHTML = '<p class="no-results">Tiada produk ditemukan.</p>';
+      return;
+  }
+  
+  products.forEach(product => {
+      const productCard = document.createElement('div');
+      productCard.className = 'product-card';
+      productCard.innerHTML = `
+          <div class="product-image">
+              <img src="${product['gambar-src']}" alt="${product.nama}">
+          </div>
+          <div class="product-info">
+              <p class="product-category">${product.category}</p>
+              <h3 class="product-name">${product.nama}</h3>
+              <p class="product-model">${product['id-id']}</p>
+              <div class="product-price">
+                  <p class="price-monthly">Dari ${product.hargabulan}/bulan</p>
+                  <p class="price-cash">${product.hargacash}</p>
+              </div>
+              <div class="product-actions">
+                  <button class="btn btn-primary">Beli Sekarang</button>
+                  <button class="btn btn-outline">Maklumat Lanjut</button>
+              </div>
+          </div>
+      `;
+      productsContainer.appendChild(productCard);
+  });
+}
+
+// Fungsi reset filter
+function resetFilters() {
+  document.getElementById('category-filter').value = 'all';
+  document.getElementById('price-filter').value = 'all';
+  filterProducts();
+}
+
+// Event listeners untuk filter
+document.addEventListener('DOMContentLoaded', () => {
+  loadProducts();
+  setupMobileMenu();
+  
+  // Tambahkan event listeners untuk filter
+  document.getElementById('category-filter').addEventListener('change', filterProducts);
+  document.getElementById('price-filter').addEventListener('change', filterProducts);
+  document.getElementById('reset-filters').addEventListener('click', resetFilters);
+  
+  // Fungsi loadProducts bisa diubah menjadi:
+  function loadProducts() {
+      displayFilteredProducts(productsData);
+  }
+});

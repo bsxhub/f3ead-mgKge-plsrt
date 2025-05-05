@@ -15,7 +15,7 @@
             <a href="#" class="logo">
                 <img src="image/Coway Logo.png" alt="Coway Logo">
             </a>
-
+<!-- Produk akan dimuatkan melalui JS 
             <nav class="nav-menu">
                 <ul>
                     <li><a href="#">Produk</a></li>
@@ -33,7 +33,7 @@
             <button class="mobile-menu-btn">
                 <i class="fas fa-bars"></i>
             </button>
-            
+-->
         </div>
     </header>
 
@@ -68,6 +68,30 @@
     <section id="products" class="products-section">
         <h2 class="section-title">Penulen Air Coway</h2>
         <p class="section-subtitle">Pilih yang terbaik untuk keluarga anda</p>
+
+         <!-- Tambahkan ini: Filter Controls -->
+    <div class="filter-controls">
+        <div class="filter-group">
+            <label for="category-filter">Kategori:</label>
+            <select id="category-filter" class="filter-select">
+                <option value="all">Semua</option>
+                <option value="Water Purifier">Water Purifier</option>
+                <!-- Tambahkan kategori lain jika ada -->
+            </select>
+        </div>
+        
+        <div class="filter-group">
+            <label for="price-filter">Harga:</label>
+            <select id="price-filter" class="filter-select">
+                <option value="all">Semua</option>
+                <option value="low">Bawah RM100/bulan</option>
+                <option value="medium">RM100-RM150/bulan</option>
+                <option value="high">Atas RM150/bulan</option>
+            </select>
+        </div>
+        
+        <button id="reset-filters" class="btn btn-outline">Reset</button>
+    </div>
         
         <div class="products-container" id="products-container">
             <!-- Produk akan dimuatkan melalui JS -->
@@ -135,7 +159,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Coway Malaysia. Hak Cipta Terpelihara.</p>
+            <p>&copy; 2025 Coway Malaysia. Hak Cipta Terpelihara. Laman web ini dimiliki oleh Perancang Kesihatan Sah Coway</p>
             <div class="social-links">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
