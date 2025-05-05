@@ -799,7 +799,7 @@ function loadProducts() {
                     <p class="price-cash">${product.hargabulan}/bulan</p>
                 </div>
                 <div class="product-actions">
-                     <button class="btn btn-primary" onclick="window.open('https://wa.me/60165835244?text=${encodeURIComponent('Saya nak beli ni ' + product.nama)}')">Beli Sekarang</button>
+                     <button class="btn btn-primary" onclick="window.open('https://wa.me/60165835244?text=${encodeURIComponent('Saya nak beli ' + product.nama)}')">Beli Sekarang</button>
     <button class="btn btn-outline" onclick="window.open('https://wa.me/60165835244?text=${encodeURIComponent('Saya nak tahu lebih lanjut tentang ' + product.nama)}')">Maklumat Lanjut</button>
                 </div>
             </div>
